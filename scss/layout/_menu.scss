@@ -1,0 +1,31 @@
+.menu {
+  display: flex;
+
+  &__item {
+    margin-left: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font: 500 16px $font-Raleway;
+
+    position: relative;
+
+    &::after {
+      @include size(0, 2px);
+      // @include align(false, true, absolute);
+      @include pos($l: 0);
+
+      content: "";
+      background-color: #fff;
+      bottom: -8px;
+      transition: all 0.5s;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

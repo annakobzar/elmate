@@ -1,0 +1,51 @@
+.header {
+  background: url(../images/header-bg.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+
+  position: relative;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    padding-top: 35px;
+    margin-bottom: 65px;
+  }
+
+  &__wrap {
+    width: 480px;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 15px 165px 25px 0;
+  }
+
+  &__gradient1 {
+    @include pos($t: 0, $z: -1);
+    @include size(100%, 120px);
+
+    // pointer-events: none;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.78) 100%
+    );
+  }
+
+  &__gradient2 {
+    @include pos($b: 0);
+    @include size(100%, 180px);
+
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(3, 3, 3, 0.53) 45.31%,
+      #060606 100%
+    );
+  }
+}
