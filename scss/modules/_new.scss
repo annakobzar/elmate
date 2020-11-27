@@ -1,0 +1,45 @@
+.new {
+  position: relative;
+  height: 680px;
+
+  &::after {
+    @include pos($t: 0, $l: 0, $z: -1);
+    @include size(100%);
+
+    content: "";
+    opacity: 0.5;
+    background: url(../images/new-bg.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &__back,
+  &__next {
+    @include pos($t: 50%);
+    transform: translateY(-50%);
+  }
+
+  &__wrap {
+    @include align(true, true);
+    @include size(530px, 125px);
+    position: absolute;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    color: #fff;
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    @include pos($b: 27px, $l: 50%);
+    transform: translateX(-50%);
+  }
+}

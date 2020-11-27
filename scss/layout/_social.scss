@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin: 0 13px;
+  }
+
+  &__icon {
+    @include size(26px);
+
+    &:hover {
+      color: #2bd9ff;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.dishes {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 90px;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__img {
+    margin-bottom: 45px;
+  }
+
+  &__subtitle {
+    font: 300 26px $font-Raleway;
+    line-height: 31px;
+  }
+}

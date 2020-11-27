@@ -1,0 +1,45 @@
+.slider {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    @include size(14px);
+
+    border: 1px solid #fff;
+
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:last-child {
+      background-color: #fff;
+    }
+  }
+}
+
+.back,
+.next {
+  cursor: pointer;
+}
+
+.back {
+  left: 5%;
+}
+
+.next {
+  right: 5%;
+}
+
+.arrow {
+  @include size(42px);
+  transition: all 0.3s;
+
+  &:hover {
+    @include size(50px);
+  }
+}

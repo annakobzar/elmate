@@ -1,0 +1,32 @@
+.out {
+  position: relative;
+  height: 680px;
+
+  &::after {
+    @include pos($t: 0, $l: 0, $z: -1);
+    @include size(100%);
+
+    content: "";
+    opacity: 0.26;
+    background: url(../images/out-bg.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &__wrap {
+    @include align(true, true);
+    @include size(320px, 155px);
+    position: absolute;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__info {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+}

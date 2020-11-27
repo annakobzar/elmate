@@ -1,0 +1,40 @@
+.about {
+  padding-top: 110px;
+  min-height: 560px;
+
+  &__info {
+    position: relative;
+
+    &::after {
+      @include size(100%, 1px);
+      @include pos($b: -43px);
+
+      content: "";
+      background-color: #fff;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__pics {
+    position: relative;
+  }
+
+  &__pic {
+    opacity: 0.5;
+  }
+
+  &__pic1 {
+    @include pos($t: 70px, $r: 40px, $z: +1);
+  }
+
+  &__pic3 {
+    @include pos($t: 230px, $r: 120px, $z: -1);
+  }
+}

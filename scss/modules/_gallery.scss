@@ -1,0 +1,21 @@
+.gallery {
+  background: url(../images/gallery-bg.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 70px 0 160px;
+  position: relative;
+
+  &__back,
+  &__next {
+    @include pos($t: 50%);
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+}

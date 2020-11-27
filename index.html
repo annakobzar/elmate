@@ -8,7 +8,7 @@
     <meta name="author" content="Admin" />
     <title>El Mate</title>
 
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/styles.min.css" />
 
@@ -28,19 +28,19 @@
               <a class="menu__link" href="#">Главная</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">О мате</a>
+              <a class="menu__link" href="#about">О мате</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Меню</a>
+              <a class="menu__link" href="#our-menu">Меню</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Мастерская вкуса</a>
+              <a class="menu__link" href="#taste">Мастерская вкуса</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Новости</a>
+              <a class="menu__link" href="#new">Новости</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
+              <a class="menu__link" href="#footer">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -55,12 +55,445 @@
       </div>
       <div class="header__gradient2"></div>
     </header>
-    <section class="about">о мате</section>
-    <section class="our-menu">меню</section>
-    <section class="out">блюда на вынос</section>
-    <section class="taste">мастерская вкуса</section>
-    <section class="new">только у нас</section>
-    <section class="gallery">instagram</section>
-    <footer class="footer">контакты</footer>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about__pics">
+              <img src="images/about-1.jpg" alt="about" class="about__pic1" />
+              <img
+                src="images/about-2.jpg"
+                alt="about"
+                class="about__pic2 about__pic"
+              />
+              <img
+                src="images/about-3.jpg"
+                alt="about"
+                class="about__pic3 about__pic"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about__info">
+              <div class="title title-s about__title">О мате</div>
+              <p class="about__text">
+                Название "матэ" (или "мате"), происходит от слова "mati",
+                которым индейцы гуарани называют тыкву, традиционно используемую
+                как сосуд для заваривания и пития мате.
+              </p>
+              <p class="about__text">
+                Мате - так называют и сам напиток, и сосуд, из которого его
+                пьют, и порошок, из которого готовят напиток, и дерево, из
+                листьев которого порошок делается. Европейцам это дерево
+                известно как "падуб". Произрастает оно в северных аргентинских
+                провинциях Коррьентес и Мисьонес, в Бразилии и Парагвае. Именно
+                в Парагвае мате открыли для себя испанцы. Впервые этот напиток
+                упомянут в письменном известии XVI века.
+                <span class="bold">Читать полностью...</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dishes">
+      <div class="container">
+        <div class="dishes__wrap">
+          <div class="title title--xs dishes__title">Лучшие блюда</div>
+          <div class="row">
+            <div class="col md-3">
+              <div class="dishes__item">
+                <img
+                  src="images/calabash.png"
+                  alt="calabash"
+                  class="dishes__img"
+                />
+                <p class="dishes__subtitle">Латино америкранской кухни</p>
+              </div>
+            </div>
+            <div class="col md-3">
+              <div class="dishes__item">
+                <img src="images/noodle.png" alt="noodle" class="dishes__img" />
+                <p class="dishes__subtitle">Азиатской кухни</p>
+              </div>
+            </div>
+            <div class="col md-3">
+              <div class="dishes__item">
+                <img
+                  src="images/hamburger.png"
+                  alt="hamburger"
+                  class="dishes__img"
+                />
+                <p class="dishes__subtitle">Европейской кухни</p>
+              </div>
+            </div>
+            <div class="col md-3">
+              <div class="dishes__item">
+                <img src="images/sushi.png" alt="sushi" class="dishes__img" />
+                <p class="dishes__subtitle">Японской кухни</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-menu" id="our-menu">
+      <div class="back our-menu__back">
+        <svg class="arrow">
+          <use xlink:href="images/sprite.svg#next0"></use>
+        </svg>
+      </div>
+      <div class="next our-menu__next">
+        <svg class="arrow">
+          <use xlink:href="images/sprite.svg#next1"></use>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="title title-s">Наше меню</div>
+        <div class="our-menu__wrap">
+          <p class="our-menu__text">
+            Ресторан Киева El Mate Cuba предлагает всем желающим воспользоваться
+            нашим гостепреимством. Только в наших ресторанах Вы можете
+            попробовать настоящий чай мате, насладиться искусно приготовленным
+            мохито в киеве (mohito), искушать блюда японской и аргентинской
+            кухни, попробовать фирменный кальян.
+          </p>
+          <p class="our-menu__text">
+            Наш бар всегда полон настоящих (не подделок) разнообразных
+            алкогольных и безалкогольных напитков.Немногие рестораны Киева могут
+            похвастаться таким широким выбором блюд, качеством обслуживания и
+            красивейшим интерьером. И если Вы будете выбирать рестораны Киева,
+            выбирайте нас. Мы ценим Вас и заботимся о каждом клиенте.
+          </p>
+        </div>
+        <ul class="our-menu__list">
+          <li class="our-menu__item">Азиатская кухня</li>
+          <li class="our-menu__item our-menu__item--active">Тайская кухня</li>
+          <li class="our-menu__item">Японская кухня</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-2 .offset-md-2"></div>
+          <div class="col-md-4">
+            <img src="images/menu/image1.png" alt="dish" />
+          </div>
+          <div class="col offset"></div>
+          <div class="col-md-3">
+            <div class="our-menu__dish">
+              <p class="our-menu__name">Том Ям Кунг</p>
+              <p class="our-menu__about">
+                (Суп на основе пасты «Том ям» и тайских специй с креветками,
+                грибами и сливками)
+              </p>
+              <div class="our-menu__info">
+                <p class="our-menu__weight">250 г</p>
+                <p class="our-menu__price">98,00 грн</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 .offset-md-2"></div>
+        </div>
+        <ul class="slider our-menu__slider">
+          <li class="slider__item"></li>
+          <li class="slider__item"></li>
+          <li class="slider__item"></li>
+        </ul>
+        <div class="row our-menu__step">
+          <div class="col-md-2 .offset-md-2"></div>
+          <div class="col-md-3">
+            <div class="our-menu__dish">
+              <p class="our-menu__name">Пад вун сен/ соевая лапша с овощами</p>
+              <p class="our-menu__about">
+                (Жареная соевая лапша с томатами, грибами желе, пекинской
+                капустой, сельдереем, луком и перепелиным яйцом)
+              </p>
+              <div class="our-menu__info">
+                <p class="our-menu__weight">250 г</p>
+                <p class="our-menu__price">148,00 грн</p>
+              </div>
+            </div>
+          </div>
+          <div class="col offset"></div>
+          <div class="col-md-4">
+            <img src="images/menu/image3.png" alt="dish" />
+          </div>
+          <div class="col-md-2 .offset-md-2"></div>
+        </div>
+
+        <div class="row our-menu__step">
+          <div class="col-md-2 .offset-md-2"></div>
+          <div class="col-md-4">
+            <img src="images/menu/image3.png" alt="dish" />
+          </div>
+          <div class="col offset"></div>
+          <div class="col-md-3">
+            <div class="our-menu__dish">
+              <p class="our-menu__name">Као Пад Понг Карри</p>
+              <p class="our-menu__about">
+                <span class="upper">
+                  Као пад понг карри/ рис с желтым карри
+                </span>
+                (Жаренный в воке рис с желтым карри)
+              </p>
+              <div class="our-menu__info">
+                <p class="our-menu__weight">250/20 г</p>
+                <p class="our-menu__price">178,00 грн</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 .offset-md-2"></div>
+        </div>
+
+        <div class="row our-menu__step">
+          <div class="col-md-2 .offset-md-2"></div>
+          <div class="col-md-3">
+            <div class="our-menu__dish">
+              <p class="our-menu__name">Пад вун сен/ соевая лапша с овощами</p>
+              <p class="our-menu__about">
+                (Жареная соевая лапша с томатами, грибами желе, пекинской
+                капустой, сельдереем, луком и перепелиным яйцом)
+              </p>
+              <div class="our-menu__info">
+                <p class="our-menu__weight">250 г</p>
+                <p class="our-menu__price">148,00 грн</p>
+              </div>
+            </div>
+          </div>
+          <div class="col offset"></div>
+          <div class="col-md-4">
+            <img src="images/menu/image4.png" alt="dish" />
+          </div>
+          <div class="col-md-2 .offset-md-2"></div>
+        </div>
+        <div class="our-menu__more">
+          Показать еще
+          <svg class="our-menu__icon">
+            <use xlink:href="images/sprite.svg#reload"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="out">
+      <div class="out__wrap">
+        <div class="title title--xs out__title">Блюда на вынос!</div>
+        <div class="out__info">получи 30% скидку</div>
+        <a href="#" class="button">Заказать</a>
+      </div>
+    </section>
+
+    <section class="taste" id="taste">
+      <div class="container">
+        <div class="title title--s">Мастерская вкуса</div>
+        <div class="taste__text">
+          Приготовление оригинальных этнических напитков на открытом огне при
+          гостях дает возможность в особенной полноте погрузится в переживание
+          живости процесса. Варка на живом огне дарит визуальноенаслаждение и
+          сохраняет натуральность компонентов.
+        </div>
+        <ul class="taste__list">
+          <li class="taste__item">Матейная церемония</li>
+          <li class="taste__item taste__item--active">Кофе</li>
+          <li class="taste__item">Чайная церемония</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/arabspecial.jpg"
+              alt="arabica"
+              class="taste__img"
+            />
+          </div>
+          <div class="col-md-3">
+            <img src="images/greentea.jpg" alt="greentea" class="taste__img" />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="images/moko.jpg"
+              alt="arabica"
+              class="taste__img taste__img--s"
+            />
+            <img
+              src="images/americano.jpg"
+              alt="arabica"
+              class="taste__img taste__img--s"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new" id="new">
+      <div class="back new__back">
+        <svg class="arrow">
+          <use xlink:href="images/sprite.svg#next0"></use>
+        </svg>
+      </div>
+      <div class="next new__next">
+        <svg class="arrow">
+          <use xlink:href="images/sprite.svg#next1"></use>
+        </svg>
+      </div>
+      <div class="new__wrap">
+        <div class="title title--xs new__title">Только у нас!</div>
+        <div class="new__info">
+          Еженедельно, с четверга по воскресенье диджейские сеты в
+          <span class="bold">El Mate Cuba</span>
+        </div>
+      </div>
+      <ul class="slider new__slider">
+        <li class="slider__item"></li>
+        <li class="slider__item"></li>
+        <li class="slider__item"></li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <div class="back gallery__back">
+        <svg class="arrow">
+          <use xlink:href="images/sprite.svg#next0"></use>
+        </svg>
+      </div>
+      <div class="next gallery__next">
+        <svg class="arrow">
+          <use xlink:href="images/sprite.svg#next1"></use>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="title title-s gallery__title">Мы в Instagram</div>
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              src="images/insta/insta01.jpg"
+              alt="instagram"
+              class="gallery__img"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="images/insta/insta02.jpg"
+              alt="instagram"
+              class="gallery__img"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="images/insta/insta03.jpg"
+              alt="instagram"
+              class="gallery__img"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="images/insta/insta04.jpg"
+              alt="instagram"
+              class="gallery__img"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="images/insta/insta05.jpg"
+              alt="instagram"
+              class="gallery__img"
+            />
+          </div>
+
+          <div class="col-md-3">
+            <img
+              src="images/insta/insta06.jpg"
+              alt="instagram"
+              class="gallery__img"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="images/insta/insta07.jpg"
+              alt="instagram"
+              class="gallery__img"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="images/insta/insta08.jpg"
+              alt="instagram"
+              class="gallery__img"
+            />
+          </div>
+        </div>
+
+        <ul class="slider">
+          <li class="slider__item"></li>
+          <li class="slider__item"></li>
+          <li class="slider__item"></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer__wrap">
+        <div class="footer__map">
+          <img src="images/map.png" alt="map" class="footer__img" />
+        </div>
+
+        <div class="footer__contacts">
+          <div class="title title--s footer__title">Контакты</div>
+          <div class="footer__line">
+            <div class="footer__contact">
+              <svg class="footer__icon">
+                <use xlink:href="images/sprite.svg#location"></use>
+              </svg>
+              <div class="footer__subtitle">Наш адрес</div>
+              <p class="footer__text">г. Киев</p>
+              <p class="footer__text">ул. Шота Руставели, 29б</p>
+            </div>
+            <div class="footer__contact">
+              <svg class="footer__icon">
+                <use xlink:href="images/sprite.svg#clock"></use>
+              </svg>
+              <div class="footer__subtitle">Часы работы</div>
+              <p class="footer__text">пн-пт&emsp;с 11.00 до 02.00</p>
+              <p class="footer__text">сб-вс&emsp; с 12.00 до 02.00</p>
+            </div>
+          </div>
+          <div class="footer__contact">
+            <svg class="footer__icon">
+              <use xlink:href="images/sprite.svg#phone"></use>
+            </svg>
+            <div class="footer__subtitle">Телефоны</div>
+            <p class="footer__text">(066) 563-57-29</p>
+            <p class="footer__text">(044) 287-32-11</p>
+          </div>
+          <a href="#" class="button footer__button">Забронировать столик</a>
+        </div>
+      </div>
+      <div class="footer__info">
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon">
+                <use xlink:href="images/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon">
+                <use xlink:href="images/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__rights">&copy; 2020 Все права защищены</p>
+      </div>
+    </footer>
   </body>
 </html>

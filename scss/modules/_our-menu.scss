@@ -1,0 +1,120 @@
+.our-menu {
+  background: url(../images/our-menu-bg.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 120px 0 50px;
+  position: relative;
+
+  &__back,
+  &__next {
+    @include pos($t: 35%);
+  }
+
+  &__wrap {
+    margin: 40px auto 190px;
+    max-width: 780px;
+    position: relative;
+
+    &::after {
+      @include size(100%, 1px);
+      @include pos($l: 0, $b: -45px);
+
+      content: "";
+      background-color: #fff;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 80px;
+  }
+
+  &__step {
+    margin-bottom: 140px;
+
+    &:last-child {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__text {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+    align-items: baseline;
+  }
+
+  &__item {
+    margin: 0 15px;
+    font: 700 22px $font-Raleway;
+    color: #fff;
+
+    &--active {
+      font-size: 32px;
+    }
+  }
+
+  &__dish {
+    @include size(280px, 115px);
+
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    position: relative;
+
+    &::after {
+      @include size(100%, 1px);
+      @include pos($l: 0, $b: -20px);
+
+      content: "";
+      background-color: #fff;
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__about {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__weight {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  &__price {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__more {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    @include size(20px);
+    margin-left: 17px;
+  }
+}
