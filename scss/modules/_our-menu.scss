@@ -51,10 +51,11 @@
   &__item {
     margin: 0 15px;
     font: 700 22px $font-Raleway;
-    color: #fff;
+    color: #cccccc;
 
     &--active {
       font-size: 32px;
+      color: #fff;
     }
   }
 

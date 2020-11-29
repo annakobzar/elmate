@@ -4,13 +4,30 @@
 
   &__item {
     margin: 0 13px;
+
+    &:hover .social__icon--insta {
+      fill: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+    }
+
+    &:hover .social__icon--yt {
+      fill: #f70000;
+    }
+
+    &:hover .social__icon--vk {
+      fill: #5181b8;
+    }
   }
 
   &__icon {
     @include size(26px);
-
-    &:hover {
-      color: #2bd9ff;
-    }
+    fill: #fff;
+    transition: all 0.3s;
   }
 }

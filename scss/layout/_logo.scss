@@ -3,9 +3,10 @@
   text-decoration: none;
   color: #fff;
   font: 700 22px $font-Raleway;
-  transition: all 0.3s;
+  transition: all 0.5s;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
+    color: lightsalmon;
   }
 }
