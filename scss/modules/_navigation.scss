@@ -1,0 +1,13 @@
+.navigation {
+  background-color: #060606;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  box-shadow: 0 0 20px #060606;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 25px;
+  }
+}

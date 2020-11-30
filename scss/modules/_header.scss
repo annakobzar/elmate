@@ -1,14 +1,6 @@
-.wrap {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 35px;
-  height: 120px;
-}
-
 .header {
   background: url(../images/header-bg.jpg) no-repeat center center;
   background-size: cover;
-  // min-height: 100vh;
   position: relative;
 
   &::before {
@@ -35,13 +27,6 @@
       rgba(3, 3, 3, 0.53) 45.31%,
       #060606 100%
     );
-  }
-
-  &__nav {
-    background-color: #060606;
-    position: fixed;
-    z-index: 3;
-    width: 100%;
   }
 
   &__wrap {
