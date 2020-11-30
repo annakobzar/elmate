@@ -17,9 +17,9 @@
     <![endif]-->
   </head>
   <body>
-    <header class="header">
+    <nav class="header__nav">
       <div class="container">
-        <nav class="header__nav">
+        <div class="wrap">
           <a class="logo" href="#">El Mate</a>
 
           <ul class="menu">
@@ -42,8 +42,12 @@
               <a class="menu__link" href="#footer">Контакты</a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </div>
+    </nav>
 
+    <header class="header">
+      <div class="container">
         <div class="header__wrap">
           <h1 class="title">Азиатская кухня в El Mate</h1>
           <div class="header__text">
@@ -88,7 +92,7 @@
                 провинциях Коррьентес и Мисьонес, в Бразилии и Парагвае. Именно
                 в Парагвае мате открыли для себя испанцы. Впервые этот напиток
                 упомянут в письменном известии XVI века.
-                <span class="bold">Читать полностью...</span>
+                <a href="#" class="about__link">Читать полностью...</a>
               </p>
             </div>
           </div>
@@ -173,6 +177,7 @@
           <li class="our-menu__item">Японская кухня</li>
         </ul>
         <div class="row">
+          <!-- 1 -->
           <div class="offset-md-2 col-md-4">
             <img src="images/menu/image1.png" alt="dish" />
           </div>
@@ -198,6 +203,7 @@
         </ul>
 
         <div class="row our-menu__step">
+          <!-- 2 -->
           <div class="offset-md-2 col-md-3">
             <div class="our-menu__dish">
               <p class="our-menu__name">Пад вун сен/ соевая лапша с овощами</p>
@@ -217,6 +223,7 @@
         </div>
 
         <div class="row our-menu__step">
+          <!-- 3 -->
           <div class="offset-md-2 col-md-4">
             <img src="images/menu/image3.png" alt="dish" />
           </div>
@@ -238,6 +245,7 @@
         </div>
 
         <div class="row our-menu__step">
+          <!-- 4 -->
           <div class="offset-md-2 col-md-3">
             <div class="our-menu__dish">
               <p class="our-menu__name">Пад вун сен/ соевая лапша с овощами</p>
@@ -286,28 +294,76 @@
           <li class="taste__item taste__item--active">Кофе</li>
           <li class="taste__item">Чайная церемония</li>
         </ul>
+
         <div class="row">
           <div class="col-md-6">
-            <img
-              src="images/arabspecial.jpg"
-              alt="arabica"
-              class="taste__img"
-            />
+            <div class="taste__post">
+              <a href="#" class="taste__link">
+                <img
+                  src="images/arabspecial.jpg"
+                  alt="arabica"
+                  class="taste__img"
+                />
+              </a>
+              <div class="taste__body">
+                <p class="taste__name">Арабика Special</p>
+                <p class="taste__price">
+                  <span class="small">от</span>
+                  <span class="bold">35,00 грн</span>
+                </p>
+              </div>
+            </div>
           </div>
+
           <div class="col-md-3">
-            <img src="images/greentea.jpg" alt="greentea" class="taste__img" />
+            <div class="taste__post">
+              <a href="#" class="taste__link">
+                <img
+                  src="images/greentea.jpg"
+                  alt="greentea"
+                  class="taste__img"
+                />
+              </a>
+              <div class="taste__body">
+                <p class="taste__name">Зеленый кофе</p>
+                <p class="taste__price">
+                  <span class="small">от</span>
+                  <span class="bold">50,00 грн</span>
+                </p>
+              </div>
+            </div>
           </div>
+
           <div class="col-md-3">
-            <img
-              src="images/moko.jpg"
-              alt="arabica"
-              class="taste__img taste__img--s"
-            />
-            <img
-              src="images/americano.jpg"
-              alt="arabica"
-              class="taste__img taste__img--s"
-            />
+            <div class="taste__post">
+              <a href="#" class="taste__link">
+                <img src="images/moko.jpg" alt="arabica" class="taste__img" />
+              </a>
+              <div class="taste__body">
+                <p class="taste__name">Кофе Мокко</p>
+                <p class="taste__price">
+                  <span class="small">от</span>
+                  <span class="bold">45,00 грн</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="taste__post">
+              <a href="#" class="taste__link">
+                <img
+                  src="images/americano.jpg"
+                  alt="arabica"
+                  class="taste__img"
+                />
+              </a>
+              <div class="taste__body">
+                <p class="taste__name">Американо</p>
+                <p class="taste__price">
+                  <span class="small">от</span>
+                  <span class="bold">40,00 грн</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,14 @@
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  height: 120px;
+}
+
 .header {
   background: url(../images/header-bg.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 100vh;
+  // min-height: 100vh;
   position: relative;
 
   &::before {
@@ -31,15 +38,18 @@
   }
 
   &__nav {
-    display: flex;
-    justify-content: space-between;
-    // height: 120px;
-    padding-top: 35px;
-    margin-bottom: 125px;
+    background-color: #060606;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
   }
 
   &__wrap {
     width: 480px;
+    min-height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__text {

@@ -60,7 +60,7 @@
   }
 
   &__dish {
-    @include size(280px, 115px);
+    // @include size(280px, 115px);
 
     top: 50%;
     transform: translateY(-50%);

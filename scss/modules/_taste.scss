@@ -38,15 +38,42 @@
     }
   }
 
-  &__img {
-    min-height: 360px;
+  &__post {
+    max-height: 365px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
 
-    &--s {
-      min-height: 170px;
-
-      &:first-child {
-        margin-bottom: 15px;
-      }
+    &:hover .taste__img {
+      transform: scale(1.1);
     }
+  }
+
+  &__img {
+    height: 100%;
+    transition: all 0.3s;
+  }
+
+  &__body {
+    @include size(100%, 85px);
+    @include pos($b: 0);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px 0 20px;
+    color: #fff;
+    font-size: 16px;
+
+    pointer-events: none;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.85) 50%,
+      #000000 100%
+    );
+  }
+
+  &__name {
+    font-family: $font-Raleway;
   }
 }
