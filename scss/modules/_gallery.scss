@@ -17,5 +17,10 @@
 
   &__img {
     margin-bottom: 40px;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

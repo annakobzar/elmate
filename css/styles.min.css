@@ -543,6 +543,7 @@ body {
 
 .footer__contacts {
   padding-left: 90px;
+  padding-bottom: 40px;
 }
 
 .footer__line {
@@ -629,6 +630,13 @@ body {
 
 .gallery__img {
   margin-bottom: 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.gallery__img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .our-menu {
